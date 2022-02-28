@@ -1,3 +1,11 @@
+import colorama
+colorama.init()
+class LogLevel:
+	SEND = colorama.Fore.MAGENTA
+	RECEIVE = colorama.Fore.GREEN
+	WARNING = colorama.Fore.YELLOW
+	DEFAULT = colorama.Style.RESET_ALL
+	
 class Logger:
 	@staticmethod
 	def log(text, color=None, log={"console":True, "file":False}):
