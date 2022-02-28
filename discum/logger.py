@@ -9,7 +9,7 @@ class LogLevel:
 
 class Logger:
 	@staticmethod
-	def log(text, color=None, log={"console":True, "file":False, "encoding":"utf-8"}):
+	def log(text, color=None, log=[{"console":True, "file":False, "encoding":"utf-8"}]):
 		if "encoding" not in log:
 			log["encoding"] = "utf-8"
 		if isinstance(log, bool):
